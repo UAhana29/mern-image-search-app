@@ -1,0 +1,13 @@
+# Node modules
+/node_modules
+/client/node_modules
+
+# Client Build
+/client/build
+
+# Server Secrets
+/server/.env
+
+# OS files
+.DS_Store
+npm-debug.log

@@ -1,0 +1,2 @@
+- [x] Install express-session in server directory
+- [x] Update server/index.js to use express-session instead of cookie-session
