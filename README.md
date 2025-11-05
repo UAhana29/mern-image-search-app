@@ -13,8 +13,9 @@ This project is a full-stack MERN application built for an internship task. It a
 
 ## 📸 Final App Screenshots
 
-![Main search interface](image-search-project/image_194d07.jpg)
-*(You will need to manually upload your screenshots to GitHub and replace this link, or just remove this section)*
+![Main search interface](screenshots/Screenshot 2025-11-05 113614.png)
+![Login Page Screenshot](screenshots/Screenshot 2025-11-05 114759.png)
+
 
 ---
 
@@ -31,3 +32,59 @@ This project is a full-stack MERN application built for an internship task. It a
 ---
 
 ## 📁 Folder Structure
+/image-search-project /client (React Frontend) /src /components /pages App.js /server (Node.js/Express Backend) /middlewares /models /routes /services .env (Must be created manually) index.js .gitignore (Hides node_modules and .env) README.md (This file)
+
+
+---
+
+## ⚙️ Setup and Installation
+
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/your-username/mern-image-search-app.git](https://github.com/your-username/mern-image-search-app.git)
+    cd mern-image-search-app
+    ```
+    *(Replace with your actual GitHub repo URL)*
+
+2.  **Server Setup:**
+    ```bash
+    cd server
+    npm install
+    ```
+
+3.  **Client Setup:**
+    ```bash
+    cd ../client
+    npm install
+    ```
+
+4.  **Create `.env` File:**
+    In the `/server` directory, create a `.env` file and add your secret keys:
+
+    ```ini
+    MONGO_URI=your_mongodb_connection_string
+    UNSPLASH_ACCESS_KEY=your_unsplash_access_key
+    COOKIE_KEY=your_random_cookie_session_key
+
+    GOOGLE_CLIENT_ID=your_google_client_id
+    GOOGLE_CLIENT_SECRET=your_google_client_secret
+    ```
+    *Note: You must also add `http://localhost:5000/auth/google/callback` to your Google Cloud credentials and `http://localhost:3000/search` as the redirect in `authRoutes.js`.*
+
+5.  **Run the Application:**
+    From the `/server` directory:
+    ```bash
+    npm run dev
+    ```
+    This will start the backend on `http://localhost:5000` and the frontend on `http://localhost:3000`.
+
+---
+
+## 📋 API Endpoints (Postman Collection)
+
+* `GET /auth/google` - Initiates Google OAuth login.
+* `GET /api/logout` - Logs the user out and redirects to home.
+* `GET /api/current_user` - Returns the currently logged-in user (or null).
+* `GET /api/top-searches` - (Public) Returns the top 5 most frequent search terms.
+* `GET /api/history` - (Protected) Returns the logged-in user's search history.
+* `POST /api/search` - (Protected) Requires `{ "term": "your_search" }`. Saves the term an
