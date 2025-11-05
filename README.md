@@ -13,9 +13,9 @@ This project is a full-stack MERN application built for an internship task. It a
 
 ## 📸 Final App Screenshots
 
-![Main search interface](screenshots/Screenshot 2025-11-05 113614.png)
+![Main search interface](https://raw.githubusercontent.com/UAhana29/mern-image-search-app/main/screenshots/Screenshot%202025-11-05%20113614.png)
 
-![Login Page Screenshot](screenshots/Screenshot 2025-11-05 114759.png)
+![Login Page Screenshot](https://raw.githubusercontent.com/UAhana29/mern-image-search-app/main/screenshots/Screenshot%202025-11-05%20114759.png)
 
 
 ---
