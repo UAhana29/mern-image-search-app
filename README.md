@@ -14,6 +14,7 @@ This project is a full-stack MERN application built for an internship task. It a
 ## 📸 Final App Screenshots
 
 ![Main search interface](screenshots/Screenshot 2025-11-05 113614.png)
+
 ![Login Page Screenshot](screenshots/Screenshot 2025-11-05 114759.png)
 
 
